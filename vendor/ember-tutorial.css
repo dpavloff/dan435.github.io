@@ -258,6 +258,7 @@ p {
   display: block;
   text-align: center;
   width: 136px;
+  color: orange;
 }
 
 .listing h3 {
@@ -373,8 +374,8 @@ p {
     background: url(../assets/images/teaching.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+    height: 190px;
+    width: 190px;
 
     position: relative;
     top: -50px;
