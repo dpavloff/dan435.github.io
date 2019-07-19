@@ -148,9 +148,9 @@ p {
 }
 
 .menu .results {
-  display: none;
-  position: absolute;
-  width: 215px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   top: 54px;
   left: 10px;
   background-color: #f6f6f6;
@@ -213,7 +213,8 @@ p {
   padding: 15px 50px;
   min-height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -222,7 +223,7 @@ p {
 }
 
 .listing img {
-  height: 100px;
+  height: 120px;
   float: left;
   padding-right: 45px;
   border-radius: 5px;
@@ -274,10 +275,13 @@ p {
   flex-grow:1;
   flex: 25%;
 }
+.map-container a{
+  font-size: 10px;
+}
 
 .listing .map {
   height: 180px;
-  width: 200px;
+  width: 600px;
 }
 
 .listing .details {
@@ -286,7 +290,8 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-around;
+  /* align-content: space-around; */
+  align-content: center;
 }
 
 .listing .detail {
