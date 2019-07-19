@@ -229,6 +229,10 @@ p {
   border-radius: 5px;
 }
 
+.listing a {
+  color: black;
+}
+
 .listing a.image.wide {
   flex: 100%;
   flex-grow: 3;
