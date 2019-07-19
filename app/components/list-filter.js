@@ -6,18 +6,14 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.filter('').then((allResults) => {
-      this.set('results', allResults.results);
-    });
+    this.filter('').then((allResults) => this.set('results', allResults.results));
   },
 
   actions: {
     handleFilterEntry() {
-      let filterInputValue = this.value;
-      let filterAction = this.filter;
-      filterAction(filterInputValue).then((filterResults) => {
-        if (filterResults.query === this.value) {
-          this.set('results', filterResults.results);
+      this.filter(this.value).then((resultsObj) => {
+        if (resultsObj.query === this.value) {
+          this.set('results', resultsObj.results);
         }
       });
     }

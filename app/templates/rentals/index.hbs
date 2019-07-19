@@ -1,11 +1,7 @@
-<List-Filter
-   @filter={{action "filterByCity"}}
-   as |filteredResults|
->
+<ListFilter @filter={{action "filterByCity"}} as |filteredResults|>
   <ul class="results">
     {{#each filteredResults as |rentalUnit|}}
-      <li><Rental-Listing @rental={{rentalUnit}} /></li>
+      <li><RentalListing @rental={{rentalUnit}} /></li>
     {{/each}}
   </ul>
-</List-Filter>
-{{outlet}}
+</ListFilter>
