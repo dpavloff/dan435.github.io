@@ -48,6 +48,32 @@ export default function() {
         image: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
         description: "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
       }
+    },
+    {
+      type: 'rentals',
+      id: 'city-flat',
+      attributes: {
+        title: 'City Flat',
+        owner: "Daniil Pavlov",
+        city: "Perm",
+        category: "Apartment",
+        bedrooms: 2,
+        image: "https://www.rightmove.co.uk/news/content/uploads/2018/03/61682_3995232_IMG_01_0000.jpg",
+        description: "A dream for any cool dudes and dudettes!"
+      }
+    },
+    {
+      type: 'rentals',
+      id: 'a-toster',
+      attributes: {
+        title: 'A toster',
+        owner: "Unknown",
+        city: "Void",
+        category: "Tech",
+        bedrooms: 8,
+        image: "https://geeksus.ru/wp-content/uploads/2018/02/HD2597_00-A1P-global-001-1.jpg",
+        description: "Powerlevel: Unknown"
+      }
     }
   ];
 
